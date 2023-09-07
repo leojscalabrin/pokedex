@@ -1,11 +1,27 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    background-color: grey;
+}
+
+body {
+    background-color: #f6f8fc;
 }
 
 .content {
     padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+    }
 }
 
 .content h1 {
@@ -18,6 +34,24 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .pokemon {
