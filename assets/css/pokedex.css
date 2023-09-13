@@ -136,6 +136,12 @@
   background-color: #6c79db;
   border: none;
   border-radius: 1rem;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  filter: brightness(0.9);
+  transition-duration: 350ms;
 }
 
 @media screen and (min-width: 380px) {
